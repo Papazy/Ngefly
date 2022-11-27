@@ -250,7 +250,9 @@ public class LoginPage extends javax.swing.JFrame {
             String user = b_username.getText();
             String pass = b_password.getText();
             if(CheckAkun(user,pass)){
-                JOptionPane.showMessageDialog(null, "Anda Berhasil Masuk");
+                MenuPilihanPage page = new MenuPilihanPage();
+                page.setVisible(true);
+                this.dispose();
             }else{
                 Warn.setForeground(Color.red);
                 b_username.setBackground(Color.red);

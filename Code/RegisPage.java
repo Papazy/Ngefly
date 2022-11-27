@@ -241,7 +241,6 @@ public class RegisPage extends javax.swing.JFrame {
 
                 Akun akun = new Akun(nama,user,pass);
                 TulisDataRegis(akun);
-                JOptionPane.showMessageDialog(null, "Data Berhasil Diinputkan");
                 LoginPage login = new LoginPage();
                 login.setVisible(true);
                 this.dispose();
